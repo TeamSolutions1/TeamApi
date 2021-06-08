@@ -1,0 +1,48 @@
+{
+    "teamapi": "1.0.0",
+    "info": {
+        "version": "2.0",
+        "title": "Allo Boutique",
+        "description": "Marché virtuel Permettant aux petits commerce d'avoir une visibilité en ligne ",
+        "termsOfService": "URL des terms of services",
+        "contact": {
+            "place": "New-deido Douala",
+            "email": "info@team_solutions.org",
+            "phone": "+237 xxx xxx xxx "
+        },
+        "license": {
+            "name": "MIT"
+        }
+    },
+    "host": "http://ip:port",
+    "basePath": "/",
+    "paths": {
+        "endpoint": "/articles",
+        "action": {
+            //"method": "POST",
+            //"method": "PUT",
+            "method": "GET",
+            "operation": {
+                "description": "List all articles off the plateform",
+                "operationId": 3,
+                "responses": {
+                    "200": {
+                        "description": "Articles List",
+                        "content": {
+                            "type": "Array",
+                            "items": []
+                        }
+                    },
+                    "default": {
+                        "description": null,
+                        "content": {
+                            "type": null,
+                            "items": []
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "error_code": 0
+}
